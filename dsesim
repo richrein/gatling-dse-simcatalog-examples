@@ -1,0 +1,7 @@
+
+
+HEAP=4G
+
+set -x
+env JAVA_OPTS="-Dconfig.file=./src/main/resources/application.conf -Xmx$HEAP -Xms$HEAP" ./target/gatling-dse-sims "$@"
+
