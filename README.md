@@ -22,6 +22,8 @@ During run you can override part or all of the application settings by using `-D
 To change configurations on the fly with excutable use the following format:
 `JAVA_OPTS="-Dcassandra.hosts=127.0.0.1" gatling-dse-sims run WriteOrderSimulation`
 
+The shell script, `dsesim` is an example of setting the heap size and configuration file for `gatling-dse-sims`.
+
 To view all loaded and overridden configurations run the follow:
 `gatling-dse-sims showConf <all, general, cassandra, simulations, gatling>`
 
